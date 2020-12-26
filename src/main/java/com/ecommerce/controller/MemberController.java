@@ -36,7 +36,7 @@ public class MemberController {
 	    {
 		  User user = userService.authenticate(emailId, pwd);
 		  if (user == null) { 
-			  map.addAttribute("error", "Login failed");
+			  map.addAttribute("error", "Login failed!Please retry with valid credentials!!");
 			  return "login";
 		  }
 		  HttpSession session = request.getSession();

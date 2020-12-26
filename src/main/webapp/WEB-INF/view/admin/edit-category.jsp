@@ -7,6 +7,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 <title>Admin - Add/Edit Product Category</title>
 </head>
 <body>
@@ -17,19 +22,15 @@
 if (request.getParameter("error") != null)
 	out.print(request.getParameter("error"));
 %>
-<form name=frmCat method=post action="admineditcataction">
+<form name=frmCat method=post action="admineditcataction" style="margin-left:30px">
 	<input type=hidden name=id value=${category.ID}>
-<table border=1 cellspacing=2 cellpadding=4>
- 	<tr>
- 		<td width=25%>Category name*</td>
- 		<td><input name=name  maxlength=50 value="${category.name}"></td>
- 	</tr>
- 	<tr>
- 		<td colspan=2>
- 			<button>Save</button>
- 		</td>
- 	</tr>
- </table>
+	
+	 <div class="form-group">
+    <label>Category name*</label>
+    <input type="text" class="form-control" value="${category.name }"  name="name" style="width:300px">
+  </div>
+	
+	  <button type="submit" class="btn btn-primary mb-2">Add Category</button>
 </form>
 
 <jsp:include page="/WEB-INF/view/components/admin-footer.jsp"></jsp:include>

@@ -86,6 +86,7 @@ public class CartController {
 				  item.setRate(product.getPrice());
 				  BigDecimal dprice = item.getRate().multiply(new BigDecimal(item.getQty())); 
 				  item.setPrice(dprice); 
+				  item.setCategoryId(product.getCategoryId());
 				  item.setName(product.getName()); 
 				  cartItems.add(item);
 				  

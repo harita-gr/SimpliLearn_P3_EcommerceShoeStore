@@ -7,6 +7,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
 <title>Sporty Shoes - Login</title>
 </head>
 <body>
@@ -14,26 +20,24 @@
 <jsp:include page="/WEB-INF/view/components/topbar.jsp" ></jsp:include>
 
 ${error}
+<br> <br>
+
+<div class="container">
 
 <form name=frmLogin action="loginaction" method="post">
-	
- <table border=1 cellspacing=2 cellpadding=4>
- 	<tr>
- 		<td width=25%>Email id*</td>
- 		<td><input name=email_id maxlength=50></td>
- 	</tr>
- 	<tr>
- 		<td width=25%>Password*</td>
- 		<td><input name=pwd maxlength=10 type="password"></td>
- 	</tr>
- 	<tr>
- 		<td colspan=2>
- 			<button>Login</button><br>
- 			<a href="signup">Not a member? Signup</a>
- 		</td>
- 	</tr>
- </table>
+
+  <div class="form-group">
+    <label>Email id*</label>
+    <input type="email" class="form-control" placeholder="Enter your email ID.." name="email_id" style="width:300px">
+  </div>
+  <div class="form-group">
+    <label>Password*</label>
+    <input type="password" class="form-control" placeholder="Enter your password.." name="pwd" style="width:300px">
+  </div>
+   <button type="submit" class="btn btn-primary mb-2">Submit</button>
 </form>
+  <small> <a href="signup">New here? Sign Up!</a></small>
+</div>
 <jsp:include page="/WEB-INF/view/components/footer.jsp"></jsp:include>
 </body>
 </html>

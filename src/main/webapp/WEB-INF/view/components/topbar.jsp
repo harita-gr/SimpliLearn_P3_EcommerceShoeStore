@@ -4,15 +4,20 @@
 
 <a href="home">Home</a> | 
 <% if (session.getAttribute("user_id") == null ) { %>
-	<a href="login">Login/Signup</a> | 
+	<a href="login">Login | </a> 
+	<a href="signup">Signup </a> 
+	<div style="float:right;top:20px;margin-right:20px">
+	<a href="adminlogin">Admin Login </a> 
+	</div>
+	 
 <% }  else { %>
 	<a href="dashboard">Dashboard</a> | 
-	<a href="cart">Cart</a> | 
-	<a href="logout">Logout</a>
-	<br>
+	<a href="cart">Cart</a> | 	
+	<div style="float:right;top:20px;margin-right:20px">
 	<a href="editprofile">Edit Profile</a> | 
-	<a href="memberpurchases">Your Orders</a> 
-
+	<a href="memberpurchases">Your Orders</a> |
+	<a href="logout">Logout</a>
+    </div>
 <% }  %>
 
 

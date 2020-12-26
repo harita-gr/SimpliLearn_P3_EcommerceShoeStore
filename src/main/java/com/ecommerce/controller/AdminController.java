@@ -56,6 +56,7 @@ public class AdminController {
 	    {
 		  
 		  Admin admin = adminService.authenticate(adminId, adminPwd);
+		  map.addAttribute("pageTitle", "ADMIN LOGIN");
 		  if (admin == null) { 
 			  map.addAttribute("error", "Admin login failed");
 			  return "admin/login";

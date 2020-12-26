@@ -37,6 +37,9 @@ public class PurchaseItem {
 
 	@Column(name = "price")
 	private BigDecimal price;
+	
+//	@Column(name = "category")
+//	private int category;
 
 	
 	public long getID() {return this.ID; }
@@ -46,6 +49,14 @@ public class PurchaseItem {
 	public BigDecimal getRate() { return this.rate;}	
 	public int getQty() { return this.qty;}	
 	public BigDecimal getPrice() { return this.price;}
+	
+	
+//	public int getCategory() {
+//		return category;
+//	}
+//	public void setCategory(int category) {
+//		this.category = category;
+//	}
 	
 	public void setID(long id) { this.ID = id;}
 	public void setPurchaseId(long value) { this.purchaseId = value;}

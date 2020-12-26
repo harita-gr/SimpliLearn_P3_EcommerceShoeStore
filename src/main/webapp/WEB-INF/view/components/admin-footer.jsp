@@ -1,2 +1,3 @@
 <hr>
-(C) Sporty Shoes 2019
+	Sporty Shoes &#169; 2020 <br>
+	<small>Developed by Harita Ravindranath</small>
