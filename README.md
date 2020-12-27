@@ -12,18 +12,19 @@ a) User view (Frontend) which enables user to:
   - View Order Details
   
 b) Admin Backend which enables admin to:
-  - Login
-  - View master lists for registered users,products,categories
+  - Manage the products in the store including categorizing them
+  - Browse the list of users who have signed up and be able to search users
+  - See purchase reports filtered by date and category
   - Change Password
 
 Flow Chart is given below for application workflow reference:
 USER FRONT END:
 
-![Untitled Document (1)](https://user-images.githubusercontent.com/61909695/100521840-2c39b180-31cc-11eb-9c05-b9df0fbf6249.png)
+![User FE](https://user-images.githubusercontent.com/61909695/103173685-863c9e00-4882-11eb-9f7c-fab1fd31cdf3.jpg)
 
 ADMIN BACKEND:
 
-![Untitled Document (2)](https://user-images.githubusercontent.com/61909695/100521798-ee3c8d80-31cb-11eb-8db4-1ecf22ab8252.png)
+![Admin FE](https://user-images.githubusercontent.com/61909695/103173661-64431b80-4882-11eb-9072-590d05472ea0.jpg)
 
 ## Tools & Technnology
 - Backend Programming Language: Core Java.
