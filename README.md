@@ -1,4 +1,4 @@
-# SPORTY SHOES -E-COMMERCE PORTAL
+# SPORTY SHOES :athletic_shoe: 
 This is a e-commerce application developed for **Sporty Shoes**
 
 ![Screenshot 2021-09-19 140911](https://user-images.githubusercontent.com/61909695/133921067-faadf3d6-7d13-43fa-9ddc-c50956383bd8.jpg)
