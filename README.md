@@ -1,6 +1,10 @@
 # SPORTY SHOES -E-COMMERCE PORTAL
 This is a e-commerce application developed for **Sporty Shoes**
 
+![Screenshot 2021-09-19 140911](https://user-images.githubusercontent.com/61909695/133921067-faadf3d6-7d13-43fa-9ddc-c50956383bd8.jpg)
+
+---
+
 ## About the application
 Sporty Shoes is a company that manufactures and sells sports shoes. They have a walk-in store, and now, they wish to launch their e-commerce portal sportyshoes.com.
 They requirements of the application are:
@@ -47,6 +51,8 @@ ADMIN BACKEND:
  - Version Control: Git and GitHub
  - Project Management and Sprint Planning: JIRA
  
+ ---
+ 
  ## SetUp and Installation
  **Prerequisites**
  
@@ -56,6 +62,8 @@ ADMIN BACKEND:
  - Git
  - MySQL workbench
  - Tomcat Server
+
+--- 
 
 **How to Run**
 
@@ -87,6 +95,11 @@ Through Eclipse IDE
 | Email          |Password      |
 | ------------- | ------------- |
 | admin  | admin |
-     
+
+---
+
 ## Author
 Harita Ravindranath
+
+---
+##### :pushpin:This project was build as part of Java Full Stack Development course by Simplilearn
